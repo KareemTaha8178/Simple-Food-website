@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+body {margin:0;font-family: Arial, Helvetica, sans-serif;}
+.backimage{
+background:url('food3.jpg') no-repeat center;
+background-size:cover;
+height:760px;
+position: relative;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  font-family: "Source Sans Pro",sans-serif;
+    font-size: .85em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: futura-pt;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 2em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: none;
+}
+.linka{
+    text-transform: uppercase;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: .85em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: futura-pt;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 2em;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.gallery{
+  display:block;
+  position:fixed;
+  bottom:50px;
+  right:50px;
+  width:50px;
+  height:50px;
+}
+.immg{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+ul.topnav li a:hover{color: #999;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+  .hero-text{top:70%; left:50%;}
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.hero-text:hover .image{
+  opacity: 0.3;
+}
+
+.hero-text:hover .middle{
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+#Contact-me {
+    width: 100%;
+    border-top:4px solid tomato;
+    background-color:rgb(60, 60, 60);
+    padding:20px;
+}
+#Contact-me .element {
+    display: flex;
+    justify-content: space-around;
+}
+#bottom {
+    text-align: center;
+    background-color: rgb(60, 60, 60);
+    border-top: 4px solid tomato;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="backimage">
+<ul class="topnav" id="demo">
+  <li><a style="color:#999" href="Home.html">Home</a></li>
+  <li><a href="Meals.html">Meals</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+  <li><a href="Menu.html">Menu</a></li>
+  <li><a href="Order.html">Order</a></li>
+</ul>
+<div class="hero-text">
+    <div class="image">
+    <h1 style="font-size:50px">Welcome To Our Website</h1>
+    <h3>Here is Your Kitchen</h3>
+    </div>
+<div class="middle">
+    <div class="text"><a href="Order.html" class="linka">Make Order Now</a></div>
+</div>
+</div>
+<div class="gallery">
+  <a href="#demo">
+    <img src="top1.png" class="immg">
+  </a>
+</div>
+</div>
+<div id="Contact-me">
+        <h1 style="color:tomato;text-align:center;">Contact Us</h1>
+        <div class="element">
+            <a href="#a" class="fa fa-facebook"></a>
+            <a href="#b" class="fa fa-twitter"></a>
+            <a href="#c" class="fa fa-google"></a>
+            <a href="#e" class="fa fa-youtube"></a>
+            <a href="#u" class="fa fa-skype"></a>
+        </div>
+    </div>
+<div id="bottom">
+        <p>Created By Kareem Taha | ©All Rights Reserved!</p>
+        <br>
+        <p>information included aren't accurate ,nor meant to be.</p>
+ </div>
+</body>
+</html>

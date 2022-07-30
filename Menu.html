@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {margin:0;font-family: Arial, Helvetica, sans-serif;}
+.backimage{
+background:url('food3.jpg') no-repeat center;
+background-size:cover;
+height:1200px;
+position: relative;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+.gallery{
+  display:block;
+  position:fixed;
+  bottom:50px;
+  right:50px;
+  width:50px;
+  height:50px;
+}
+.immg{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+.full {
+    text-align: center;
+    width: 20%;
+    align-self: center;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: tomato;
+    transition: .3s linear;
+    z-index: -1;
+}
+ .btn:hover{
+    opacity:0.8;
+  }
+.btn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    color: white;
+    background-color:tomato;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border:2px solid tomato;
+    border-radius: .5rem;
+    position: relative;
+    overflow:hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  font-family: "Source Sans Pro",sans-serif;
+    font-size: .85em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: futura-pt;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 2em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: none;
+}
+.tableMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 30px;
+}
+.td {
+    border-bottom: 3px solid grey;
+}
+*::selection {
+    background: tomato;
+    color: #fff;
+}
+h2{
+color:white;
+}
+span{
+color:tomato;
+}
+p {
+    color:white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ul.topnav li a:hover{color: #999;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+  .backimage{height:1700px;}
+  .btn{width:200px;}
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+#Contact-me {
+    width: 100%;
+    border-top:4px solid tomato;
+    background-color:rgb(60, 60, 60);
+    padding:20px;
+}
+#Contact-me .element {
+    display: flex;
+    justify-content: space-around;
+}
+#bottom {
+    text-align: center;
+    background-color: rgb(60, 60, 60);
+    border-top: 4px solid tomato;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="backimage">
+<ul class="topnav" id="demo">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Meals.html">Meals</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+  <li><a style="color:#999" href="Menu.html">Menu</a></li>
+  <li><a href="Order.html">Order</a></li>
+</ul>
+<div class="ourmeals">
+<p style="color:white;font-size:30px;text-align:center;">Our<span style="color:tomato;font-size:30px;"> Menu</span></p>
+</div>
+<div class="gallery">
+  <a href="#demo">
+    <img src="top1.png" class="immg">
+  </a>
+</div>
+<div class="tableMenu" style="overflow-x: auto;">
+            <table>
+                <tbody><tr>
+                    <td>
+                     <div class="td">
+                         <h2>Pizza Margherita</h2>
+                         <p class="money">15<span>$</span></p>
+                         <p>Bagel Sandwiches inspired by Steven Universe</p>
+                       
+                     </div>
+                    </td>
+                    <td> 
+                         <div class="td">
+                        <h2>Toast Classic</h2>
+                        <p class="money">20<span>$</span></p>
+                        <p>Lettuce Wraps & Mango Sticky Rice inspired by Spider-Man: Homecoming</p>
+                       
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                    <td>  
+                        <div class="td">
+                        <h2>Onions And Beacom</h2>
+                        <p class="money">4.50<span>$</span></p>
+                        <p>Bacon and Eggs Breakfast inspired by Howl's Moving Castle</p>
+                       
+                    </div>
+                </td>
+                    <td>  
+                        <div class="td">
+                        <h2>Beef Steak</h2>
+                        <p class="money">49<span>$</span></p>
+                        <p>Orange Mocha Frappuccinos inspired by Zoolander</p>
+                        
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="td">
+                            <h2>Carbonara</h2>
+                            <p class="money">10<span>$</span></p>
+                            <p>Binging with Babish 4 Million Subscriber Special: Death Sandwich from Regular Show</p>
+                            
+                        </div>
+                    </td>
+                    <td>
+                        <div class="td">
+                            <h2>Argentina"s Meals</h2>
+                            <p class="money">10<span>$</span></p>
+                            <p>The Swanson inspired by Parks and Recreation</p>
+                            
+                        </div>
+                    </td>
+                </tr>
+                <tr c="">
+                    <td>
+                        <div class="td">
+                            <h2>Hamburger Deluxe</h2>
+                            <p class="money">15<span>$</span></p>
+                            <p>Krabby Supreme inspired by Spongebob Squarepants</p>
+                         
+                        </div>
+                    </td>
+                    <td> <div class="td">
+                        <h2>Rastbeef</h2>
+                        <p class="money">15<span>$</span></p>
+                        <p>Crème de la Crème à la Edgar inspired by The Aristocats</p>
+                        
+                    </div></td>
+                </tr>
+                <tr class="bottom">
+                    <td>
+                         <div class="td">
+                        <h2>Fish And Chips</h2>
+                        <p class="money">9<span>$</span></p>
+                        <p>Roast Beast inspired by How The Grinch Stole Christmas</p>
+                    
+                    </div>
+                </td>
+                    <td> <div class="td">
+                        <h2>Tomatoes And Chips</h2>
+                        <p class="money">9<span>$</span></p>
+                        <p>Bear Stew inspired by Red Dead Redemption 2</p>
+                        
+                    </div></td>
+                </tr>
+            </tbody></table>
+            <a href="Order.html" class="btn full">Order Now</a>
+        </div>
+</div>
+<div id="Contact-me">
+        <h1 style="color:tomato;text-align:center;">Contact Us</h1>
+        <div class="element">
+            <a href="#a" class="fa fa-facebook"></a>
+            <a href="#b" class="fa fa-twitter"></a>
+            <a href="#c" class="fa fa-google"></a>
+            <a href="#e" class="fa fa-youtube"></a>
+            <a href="#u" class="fa fa-skype"></a>
+        </div>
+    </div>
+<div id="bottom">
+        <p style="color:black;">Created By Kareem Taha | ©All Rights Reserved!</p>
+        <p style="color:black;">information included aren't accurate ,nor meant to be.</p>
+ </div>
+</body>
+</html>
